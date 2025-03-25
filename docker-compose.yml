@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  repo-container:
+    image: my-repo-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./local-repos:/repos
+    working_dir: /repos
+    command: ["/bin/bash"]
+    tty: true
+    stdin_open: true
+
+volumes:
+  local-repos:
