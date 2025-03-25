@@ -8,8 +8,7 @@
 | `1.1` | `zhewei` | 修改為直接複製設定檔 |
 
 ## 前言
-
-Docker Repo 環境，關於此環境設定
+在windows環境中，Docker Repo 環境，關於此環境設定
 為了方便管理 `Gerrit` 抓下來的 `git` or `gerrit`，可以直接看到 `git log` or 執行其他操作。
 
 ## 配置
@@ -20,7 +19,7 @@ Docker Repo 環境，關於此環境設定
 - `set.bat` : 修改 `C:\cygwin64\home\chewei.hu\.ssh\*` 改為自己原本的 `cygwin64` 路徑。
 
 ## 前置作業
-
+- 先執行docker
 - 執行 `set.bat`，產生 `ssh` 資料夾。
 
   >[!tip]
