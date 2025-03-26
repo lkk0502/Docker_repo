@@ -1,6 +1,6 @@
 [user]
-    name = chewei.hu
-    email = chewei.hu@mail.kway.com.tw
+    name = YOURNAME
+    email = YOURNAME@mail.kway.com.tw
 [commit]
     template = /root/.gittemplate
 [color]
