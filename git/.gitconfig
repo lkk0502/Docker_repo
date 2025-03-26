@@ -5,3 +5,9 @@
     template = /root/.gittemplate
 [color]
 	ui = auto
+[remote "kway"]
+    push = HEAD:refs/for/master
+[push]
+    default = current
+[remote]
+    pushDefault = kway

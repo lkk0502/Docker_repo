@@ -6,6 +6,7 @@
 | :---- | :------- | :------------------- |
 | `1.0` | `zhewei` | 初版                 |
 | `1.1` | `zhewei` | 修改為直接複製設定檔 |
+| `1.2` | `zhewei` | 新增 push 預設       |
 
 ## 前言
 在 windows 環境中，Docker Repo 環境，關於此環境設定
@@ -53,3 +54,11 @@
 
 - `Test Git` : `ssh -p 29418 gerrit.kway.com.tw`
 - `Test Repo` : `repo init -u ssh://gerrit.kway.com.tw:29418/manifest -m autotest_kway.xml -g linux; repo sync`
+
+## Git Push
+
+- 進入環境後可以 `source ~/.bashrc`，使用 `repo sync` 會自動使用 `repo start xxx --all` 建立分支。
+- `cd` 至該 git 分支路徑下， `commit` 完畢後直接使用 `git push`。
+
+    > [!tip]
+    > 預設為推送 `master`，若要推送其他分支，請直接指定分支名稱。

@@ -26,6 +26,10 @@ COPY --chmod=600 ./ssh/ /root/.ssh/
 # 設定權限並調整配置
 RUN chmod 644 /root/.gitconfig /root/.gittemplate
 
+# 複製並設置 .bashrc
+COPY ./bash/.bashrc /root/.bashrc
+RUN chmod 644 /root/.bashrc
+
 # 設定工作目錄並確保權限
 WORKDIR /repos
 RUN chmod -R 777 /repos
